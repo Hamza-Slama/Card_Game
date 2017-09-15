@@ -278,7 +278,7 @@
                     android:visibility="gone" />
 
                 <ImageView
-                    android:id="@+id/iv40-_Player1"
+                    android:id="@+id/iv40_Player1"
 
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
@@ -366,27 +366,6 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:src="@drawable/pique_05"
-                    android:visibility="gone" />
-
-                <ImageView
-                    android:id="@+id/iv54_Player1"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
-                    android:visibility="gone" />
-
-                <ImageView
-                    android:id="@+id/iv55_Player1"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
-                    android:visibility="gone" />
-
-                <ImageView
-                    android:id="@+id/iv56_Player1"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
                     android:visibility="gone" />
 
             </LinearLayout>
@@ -994,7 +973,7 @@
                     android:visibility="gone" />
 
                 <ImageView
-                    android:id="@+id/iv40-_Player2"
+                    android:id="@+id/iv40_Player2"
 
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
@@ -1084,26 +1063,7 @@
                     android:src="@drawable/pique_05"
                     android:visibility="gone" />
 
-                <ImageView
-                    android:id="@+id/iv54_Player2"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
-                    android:visibility="gone" />
 
-                <ImageView
-                    android:id="@+id/iv55_Player2"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
-                    android:visibility="gone" />
-
-                <ImageView
-                    android:id="@+id/iv56_Player2"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
-                    android:visibility="gone" />
 
             </LinearLayout>
         </HorizontalScrollView>

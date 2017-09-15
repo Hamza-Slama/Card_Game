@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
     var number1 = IntArray(26)
     var number2 = IntArray(26)
 
-    var listPlayer_1_Image = IntArray(26)
-    var listPlayer_2_Image = IntArray(26)
+    var listPlayer_1_Image = IntArray(52)
+    var listPlayer_2_Image = IntArray(52)
 
     // indice for save the pos of image setted from the list of 26 carte
     var indice1 = IntArray(4)
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
     var checked2 = IntArray(5) { 0 }
     //comment
     // to impose the dupplicated set carte
-    var setted1 = IntArray(26) { 0 }
-    var setted2 = IntArray(26) { 0 }
+    var setted1 = IntArray(52) { 0 }
+    var setted2 = IntArray(52) { 0 }
 
 
     //counter of carte in your main
@@ -54,6 +54,9 @@ class MainActivity : AppCompatActivity() {
 
     var counterLastSetCarte = 0
 
+    //player curently play
+    var set1 = true
+    var set2 = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         setCarteSelectionOfGame()
         setCarteToCenter()
         isLiar()
-        putIntoList ()
+        //putIntoList ()
     }
 
     fun distributeRandomizeCarte() {
@@ -110,20 +113,25 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    
+    //TODO : update the list of player to 56 id
+    //TODO : update all liste
+    //TODO : set the image rturned into the listPlayer_1_Image
 
     //TODO : verification une seul click sur l'image  ====== done
     //TODO : set the iamge gone when it cheked ======= done
-    //TODO : reset the block if we have a quads
+    //TODO : reset the block if we have a quads ==== done
+
+    //TODO : update the liste , without update the list into all the function we create an companion contaion the list of elt
 
     fun setImageCheked() {
 
-        var listPlayer_1 = arrayListOf(iv1_Player1, iv2_Player1, iv3_Player1, iv4_Player1, iv5_Player1, iv6_Player1, iv7_Player1, iv8_Player1, iv9_Player1, iv10_Player1, iv11_Player1, iv12_Player1, iv13_Player1, iv14_Player1, iv15_Player1, iv16_Player1, iv17_Player1, iv18_Player1, iv19_Player1, iv20_Player1, iv21_Player1, iv22_Player1, iv23_Player1, iv24_Player1, iv25_Player1, iv26_Player1)
-        var listPlayer_2 = arrayOf(iv1_Player2, iv2_Player2, iv3_Player2, iv4_Player2, iv5_Player2, iv6_Player2, iv7_Player2, iv8_Player2, iv9_Player2, iv10_Player2, iv11_Player2, iv12_Player2, iv13_Player2, iv14_Player2, iv15_Player2, iv16_Player2, iv17_Player2, iv18_Player2, iv19_Player2, iv20_Player2, iv21_Player2, iv22_Player2, iv23_Player2, iv24_Player2, iv25_Player2, iv26_Player2)
+        var listPlayer_1 = arrayListOf(iv1_Player1, iv2_Player1, iv3_Player1, iv4_Player1, iv5_Player1, iv6_Player1, iv7_Player1, iv8_Player1, iv9_Player1, iv10_Player1, iv11_Player1, iv12_Player1, iv13_Player1, iv14_Player1, iv15_Player1, iv16_Player1, iv17_Player1, iv18_Player1, iv19_Player1, iv20_Player1, iv21_Player1, iv22_Player1, iv23_Player1, iv24_Player1, iv25_Player1, iv26_Player1,iv27_Player1,iv28_Player1,iv29_Player1,iv30_Player1,iv31_Player1, iv32_Player1, iv33_Player1, iv34_Player1, iv35_Player1, iv36_Player1, iv37_Player1, iv38_Player1, iv39_Player1, iv40_Player1, iv41_Player1, iv42_Player1, iv43_Player1, iv44_Player1, iv45_Player1, iv46_Player1, iv47_Player1, iv48_Player1, iv49_Player1, iv50_Player1, iv51_Player1, iv52_Player1)
+        var listPlayer_2 = arrayListOf(iv1_Player2, iv2_Player2, iv3_Player2, iv4_Player2, iv5_Player2, iv6_Player2, iv7_Player2, iv8_Player2, iv9_Player2, iv10_Player2, iv11_Player2, iv12_Player2, iv13_Player2, iv14_Player2, iv15_Player2, iv16_Player2, iv17_Player2, iv18_Player2, iv19_Player2, iv20_Player2, iv21_Player2, iv22_Player2, iv23_Player2, iv24_Player2, iv25_Player2, iv26_Player2,iv27_Player2,iv28_Player2,iv29_Player2,iv30_Player2,iv31_Player2, iv32_Player2, iv33_Player2, iv34_Player2, iv35_Player2, iv36_Player2, iv37_Player2, iv38_Player2, iv39_Player2, iv40_Player2, iv41_Player2, iv42_Player2, iv43_Player2, iv44_Player2, iv45_Player2, iv46_Player2, iv47_Player2, iv48_Player2, iv49_Player2, iv50_Player2, iv51_Player2, iv52_Player2)
 
         var listPlayer_2_OutPut = arrayListOf(iv1_Player2_OutPut, iv2_Player2_OutPut, iv3_Player2_OutPut, iv4_Player2_OutPut)
         var listPlayer_1_OutPut = arrayListOf(iv1_Player1_OutPut, iv2_Player1_OutPut, iv3_Player1_OutPut, iv4_Player1_OutPut)
         println(testDestribute)
+
         // set the image for the player 1
 
         for (po in 0..listPlayer_1.size - 1) {
@@ -221,8 +229,8 @@ class MainActivity : AppCompatActivity() {
     fun turnImageToListOfCarte() {
         var test = false
         var test2 = false
-        var listPlayer_1 = arrayListOf(iv1_Player1, iv2_Player1, iv3_Player1, iv4_Player1, iv5_Player1, iv6_Player1, iv7_Player1, iv8_Player1, iv9_Player1, iv10_Player1, iv11_Player1, iv12_Player1, iv13_Player1, iv14_Player1, iv15_Player1, iv16_Player1, iv17_Player1, iv18_Player1, iv19_Player1, iv20_Player1, iv21_Player1, iv22_Player1, iv23_Player1, iv24_Player1, iv25_Player1, iv26_Player1)
-        var listPlayer_2 = arrayOf(iv1_Player2, iv2_Player2, iv3_Player2, iv4_Player2, iv5_Player2, iv6_Player2, iv7_Player2, iv8_Player2, iv9_Player2, iv10_Player2, iv11_Player2, iv12_Player2, iv13_Player2, iv14_Player2, iv15_Player2, iv16_Player2, iv17_Player2, iv18_Player2, iv19_Player2, iv20_Player2, iv21_Player2, iv22_Player2, iv23_Player2, iv24_Player2, iv25_Player2, iv26_Player2)
+        var listPlayer_1 = arrayListOf(iv1_Player1, iv2_Player1, iv3_Player1, iv4_Player1, iv5_Player1, iv6_Player1, iv7_Player1, iv8_Player1, iv9_Player1, iv10_Player1, iv11_Player1, iv12_Player1, iv13_Player1, iv14_Player1, iv15_Player1, iv16_Player1, iv17_Player1, iv18_Player1, iv19_Player1, iv20_Player1, iv21_Player1, iv22_Player1, iv23_Player1, iv24_Player1, iv25_Player1, iv26_Player1,iv27_Player1,iv28_Player1,iv29_Player1,iv30_Player1,iv31_Player1, iv32_Player1, iv33_Player1, iv34_Player1, iv35_Player1, iv36_Player1, iv37_Player1, iv38_Player1, iv39_Player1, iv40_Player1, iv41_Player1, iv42_Player1, iv43_Player1, iv44_Player1, iv45_Player1, iv46_Player1, iv47_Player1, iv48_Player1, iv49_Player1, iv50_Player1, iv51_Player1, iv52_Player1)
+        var listPlayer_2 = arrayOf(iv1_Player2, iv2_Player2, iv3_Player2, iv4_Player2, iv5_Player2, iv6_Player2, iv7_Player2, iv8_Player2, iv9_Player2, iv10_Player2, iv11_Player2, iv12_Player2, iv13_Player2, iv14_Player2, iv15_Player2, iv16_Player2, iv17_Player2, iv18_Player2, iv19_Player2, iv20_Player2, iv21_Player2, iv22_Player2, iv23_Player2, iv24_Player2, iv25_Player2, iv26_Player2,iv27_Player2,iv28_Player2,iv29_Player2,iv30_Player2,iv31_Player2, iv32_Player2, iv33_Player2, iv34_Player2, iv35_Player2, iv36_Player2, iv37_Player2, iv38_Player2, iv39_Player2, iv40_Player2, iv41_Player2, iv42_Player2, iv43_Player2, iv44_Player2, iv45_Player2, iv46_Player2, iv47_Player2, iv48_Player2, iv49_Player2, iv50_Player2, iv51_Player2, iv52_Player2)
 
         var listPlayer_2_OutPut = arrayListOf(iv1_Player2_OutPut, iv2_Player2_OutPut, iv3_Player2_OutPut, iv4_Player2_OutPut)
         var listPlayer_1_OutPut = arrayListOf(iv1_Player1_OutPut, iv2_Player1_OutPut, iv3_Player1_OutPut, iv4_Player1_OutPut)
@@ -424,9 +432,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //TODO : add the list of Carte into the list carte of loser , 2 set the image into listpalyer_image
     fun setCarteToCenter() {
-        var set1 = true
-        var set2 = true
+
         counterLastSetCarte = 0
         Press_Player1.setOnClickListener {
             counterLastSetCarte = 0
@@ -479,24 +487,35 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun isLiar() {
-        //TODO : turn the carte to the loser
-        //TODO : augmentation , decresing counter of carte
-        //TODO : duplicate the listOfCarte in game : we most have a size of the list immidatly ,
-        // TODO : we must have the size of the number of carte setted into game
+    //TODO : turn the carte to the loser
+    //TODO : augmentation , decresing counter of carte
+    //TODO : duplicate the listOfCarte in game : we most have a size of the list immidatly ,
+    // TODO : we must have the size of the number of carte setted into game
+    //TODO : Force one Click (it's a bug ) because the rest of the listeCarteInGame
 
+    fun isLiar() {
+        var forceOnePress =  0
         iv_Joker.setOnClickListener {
-            if (isPressedSet) {
+            if (isPressedSet && forceOnePress == 0) {
                 if (isLastListOfCarteIsSame()) {
                     Toast.makeText(this, "good this is a true carte ", Toast.LENGTH_LONG).show()
                 } else {
                     Toast.makeText(this, "HHHH you are a lier :p ", Toast.LENGTH_LONG).show()
                 }
+                //TODO :AddCarte
                 resetlistOfCarteInGame()
+                forceOnePress =1
             }
         }
     }
 
+    fun addCarteToLoser (){
+      if (!set1){
+
+      }else if (!set2){
+
+      }
+    }
     fun isLastListOfCarteIsSame(): Boolean {
         var istrue = true
         var lastlistcarte = listOfCarteInGame.size - counterLastSetCarte
@@ -552,7 +571,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
+ //Just a test
     fun putIntoList (){
         var listPlayer_1 = arrayListOf(iv31_Player1, iv32_Player1, iv33_Player1, iv34_Player1, iv35_Player1, iv36_Player1,iv37_Player1,iv38_Player1,iv39_Player1)
         Press_Player1.setOnClickListener {
@@ -565,6 +584,7 @@ class MainActivity : AppCompatActivity() {
 
     //TODO : add the image id and put it GONE until one lose the round*
     //TODO : put the carte into the loser & start the play randomly
+
 
 }
 
