@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_table"
+    tools:context="all.stage.myapplication.StartActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_heightPercent="80%"
+            app:layout_marginBottomPercent="10%"
+            app:layout_marginLeftPercent="10%"
+            app:layout_marginRightPercent="10%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="100%">
+
+            <TextView
+                android:id="@+id/tvHelp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/text"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="35dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btnPlayGame"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:background="@drawable/background_table"
+                android:padding="12dp"
+                android:text="play"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:background="@drawable/background_table"
+                android:padding="12dp"
+                android:text="Score"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:background="@drawable/background_table"
+                android:padding="12dp"
+                android:text="Setting"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/TVacueil"
+                android:padding="5dp"
+                android:src="@drawable/aceuil" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>

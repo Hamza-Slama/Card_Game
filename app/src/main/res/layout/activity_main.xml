@@ -31,163 +31,164 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
 
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv2_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv3_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv4_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv5_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv6_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv7_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv8_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv9_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv10_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv11_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv12_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv13_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv14_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv15_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv16_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv17_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv18_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv19_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv20_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv21_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv22_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv23_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv24_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv25_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv26_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv27_Player1"
                     android:layout_width="40dp"
+
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
 
                     android:visibility="gone" />
 
@@ -195,35 +196,35 @@
                     android:id="@+id/iv28_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv29_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv30_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv31_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv32_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
 
@@ -231,141 +232,141 @@
                     android:id="@+id/iv33_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv34_Player1"
                     android:layout_width="40dp"
-
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3"
+                    android:visibility="gone" />
 
 
                 <ImageView
                     android:id="@+id/iv35_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv36_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv37_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv38_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv39_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv40_Player1"
-
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3"
+                    android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv41_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv42_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv43_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv44_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv45_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv46_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv47_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv48_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv49_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv50_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv51_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv52_Player1"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
             </LinearLayout>
@@ -394,7 +395,7 @@
                 android:id="@+id/Press_Player1"
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/good" />
+                android:src="@drawable/pressbutton" />
         </LinearLayout>
 
         <HorizontalScrollView
@@ -461,7 +462,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher_foreground" />
+                android:src="@drawable/distribute2" />
         </LinearLayout>
 
         <LinearLayout
@@ -655,8 +656,8 @@
             <ImageView
                 android:id="@+id/Press_Player2"
                 android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/good" />
+                android:layout_height="match_parent"
+                android:src="@drawable/pressbutton" />
         </LinearLayout>
 
         <HorizontalScrollView
@@ -727,198 +728,198 @@
                     android:id="@+id/iv1_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv2_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv3_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv4_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv5_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv6_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv7_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv8_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv9_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv10_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv11_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv12_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv13_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv14_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv15_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv16_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv17_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv18_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv19_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv20_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv21_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv22_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv23_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv24_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv25_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv26_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3" />
 
                 <ImageView
                     android:id="@+id/iv27_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv28_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv29_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv30_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv31_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv32_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
 
@@ -926,143 +927,142 @@
                     android:id="@+id/iv33_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv34_Player2"
                     android:layout_width="40dp"
-
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3"
+                    android:visibility="gone" />
 
 
                 <ImageView
                     android:id="@+id/iv35_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv36_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv37_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv38_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv39_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv40_Player2"
-
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13" />
+                    android:src="@drawable/joker3"
+                    android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv41_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv42_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv43_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv44_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv45_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv46_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv47_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv48_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv49_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv50_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv51_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/carreau_13"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/iv52_Player2"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pique_05"
+                    android:src="@drawable/joker3"
                     android:visibility="gone" />
-
 
 
             </LinearLayout>
