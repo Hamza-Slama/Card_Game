@@ -218,7 +218,7 @@ class Main2Activity : AppCompatActivity() {
 
                             Handler().postDelayed({
                                 resetImageChosenByPlayer2()
-                            }, 400)
+                            }, 800)
 
                         }
 
@@ -349,33 +349,33 @@ class Main2Activity : AppCompatActivity() {
 
             Handler().postDelayed({
 
-//                var randomiPressed = intArrayOf(0,1,1,1)
-//                var rand = Random()
-//                var randomi = rand.nextInt(randomiPressed.size - 1)
-//
-//                if (isPressedSet && randomiPressed[randomi] == 1 ) {
-//
-//                    if (isLastListOfCarteIsSame()) {
-//
-//                        Toast.makeText(this, "good this is a true card ", Toast.LENGTH_SHORT).show()
-//
-//                    } else {
-//
-//                        Toast.makeText(this, "HHHH you are a liar :p ", Toast.LENGTH_SHORT).show()
-//                        TelLiar = true
-//                    }
-//
-//                    addCarteToLoser()
-//                    isPressedSet = false
-//                    findTheWinner()
-//
-//
-//                }
-//                (TelLiar ||(set1 && randomiPressed[randomi] != 1)
-                if (set1 ) {
+                var randomiPressed = intArrayOf(0,1,1,1)
+                var rand = Random()
+                var randomi = rand.nextInt(randomiPressed.size - 1)
+
+                if (isPressedSet && randomiPressed[randomi] == 1 ) {
+
+                    if (isLastListOfCarteIsSame()) {
+
+                        Toast.makeText(this, "good this is a true card ", Toast.LENGTH_SHORT).show()
+
+                    } else {
+
+                        Toast.makeText(this, "HHHH you are a liar :p ", Toast.LENGTH_SHORT).show()
+                        TelLiar = true
+                    }
+
+                    addCarteToLoser()
+                    isPressedSet = false
+                    findTheWinner()
+
+
+                }
+
+                if ((TelLiar ||(set1 && randomiPressed[randomi] != 1) )) {
 
                     counterLastSetCarte = 0
-//                    TelLiar=false
+                    TelLiar=false
                     set1 = false
                     set2 = true
                     isPressedSet = true
@@ -383,11 +383,11 @@ class Main2Activity : AppCompatActivity() {
                     var rand = Random()
 
                     var rest = if (listPlayer_1_Image.size > 4) 3 else listPlayer_1_Image.size % 4
-                    var randNumber = if (rest >= 3) rand.nextInt(rest) else rest
+                    var randNumber = if (rest >= 3) rand.nextInt(rest)+1 else rest
 
                     if (rest >= 3) {
 
-                        for (i in 0..randNumber) {
+                        for (i in 0..randNumber-1) {
 
                             indice1[i] = rand.nextInt(listPlayer_1_Image.size - 1)
                             counterLastSetCarte++
@@ -427,7 +427,7 @@ class Main2Activity : AppCompatActivity() {
 
                 }
 
-            }, 400)
+            }, 800)
 
         }
 
@@ -548,19 +548,24 @@ class Main2Activity : AppCompatActivity() {
             if (isPressedSet) {
 
                 var msg = ""
-//                if (isLastListOfCarteIsSame()) {
+
+                //msg=" Sorry Wrong Prediction ! "
+                if (isLastListOfCarteIsSame()) {
                     //player 2 is wrong
                 if ((!set1 && !istrueListOfCarte) || (set1 && istrueListOfCarte)){
                         msg = "You Are a Liar "
+                    }else  if ((!set2 && !istrueListOfCarte) || (set2 && istrueListOfCarte)) {
+//
+                    msg="Good Job !"
                     }else {
-                        msg="Good This Is A True Card  "
-                    }
+                    msg="Good This Is A True Card  "
+                }
                     Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 
-//                } else {
+                } else {
 
 //                    Toast.makeText(this, "HHHH you are a liar :p ", Toast.LENGTH_SHORT).show()
-//                }
+               }
 
                 addCarteToLoser()
                 isPressedSet = false
