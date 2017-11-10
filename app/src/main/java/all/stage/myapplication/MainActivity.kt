@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Gravity
 import android.view.View
 import android.widget.Toast
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
 import java.util.*
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     var ListOfCarte1_test = arrayListOf(R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.trefle_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.carreau_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.coeur_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01, R.drawable.pick_01)
     var ListOfCarte = arrayListOf(R.drawable.carreau_01, R.drawable.carreau_02, R.drawable.carreau_03, R.drawable.carreau_04, R.drawable.carreau_05, R.drawable.carreau_06, R.drawable.carreau_07, R.drawable.carreau_08, R.drawable.carreau_09, R.drawable.carreau_10, R.drawable.carreau_11, R.drawable.carreau_12, R.drawable.carreau_13, R.drawable.trefle_01, R.drawable.trefle_02, R.drawable.trefle__03, R.drawable.trefle_04, R.drawable.trefle_05, R.drawable.trefle_06, R.drawable.trefle_07, R.drawable.trefle_08, R.drawable.trefle_09, R.drawable.trefle_10, R.drawable.trefle_11, R.drawable.trefle_12, R.drawable.trefle_13, R.drawable.coeur_01, R.drawable.coeur_02, R.drawable.coeur_03, R.drawable.coeur_04, R.drawable.coeur_05, R.drawable.coeur_06, R.drawable.coeur_07, R.drawable.coeur_08, R.drawable.coeur_09, R.drawable.coeur_10, R.drawable.coeur_11, R.drawable.coeur_12, R.drawable.coeur_13, R.drawable.pick_01, R.drawable.pique_02, R.drawable.pique_03, R.drawable.pique_04, R.drawable.pique_05, R.drawable.pique_06, R.drawable.pique_07, R.drawable.pique_08, R.drawable.pique_09, R.drawable.pique_10, R.drawable.pique_11, R.drawable.pique_12, R.drawable.pique_13)
-    var ListOfCarteSelected = arrayListOf(R.drawable.carreau_01, R.drawable.carreau_02, R.drawable.carreau_03, R.drawable.carreau_04, R.drawable.carreau_05, R.drawable.carreau_06, R.drawable.carreau_07, R.drawable.carreau_08, R.drawable.carreau_09, R.drawable.carreau_10, R.drawable.carreau_11, R.drawable.carreau_12, R.drawable.carreau_13)
+//    var ListOfCarteSelected = arrayListOf(R.drawable.carreau_01, R.drawable.carreau_02, R.drawable.carreau_03, R.drawable.carreau_04, R.drawable.carreau_05, R.drawable.carreau_06, R.drawable.carreau_07, R.drawable.carreau_08, R.drawable.carreau_09, R.drawable.carreau_10, R.drawable.carreau_11, R.drawable.carreau_12, R.drawable.carreau_13)
 
     var ConstantnumberOfCard = 52
     var number1 = IntArray(ConstantnumberOfCard)
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
 
     // select carte number for palying
-    var numberOfSelectedCarte = -1
+   private var numberOfSelectedCarte = -1
 
     var testDestribute = false
     var isPressedSet = false
@@ -78,6 +79,7 @@ class MainActivity : AppCompatActivity() {
 //        findTheWinner()
 
 
+
     }
 
     fun distributeRandomizeCarte() {
@@ -96,14 +98,16 @@ class MainActivity : AppCompatActivity() {
                     if (ListOfCarte.size != 0) {
 
                         randomi = rand.nextInt(ListOfCarte.size)
-                        listPlayer_1[i].setImageResource(ListOfCarte[randomi])
+                        Picasso.with(this).load(ListOfCarte[randomi]).into( listPlayer_1[i])
+                       // listPlayer_1[i].setImageResource(ListOfCarte[randomi])
                         number1[i] = buNumberEvent(ListOfCarte[randomi])
                         listPlayer_1_Image[i] = ListOfCarte[randomi]
                         emptyPlaceFromTheListOfImage1[i] = 1
                         ListOfCarte.removeAt(randomi)
 
                         randomi2 = rand.nextInt(ListOfCarte.size)
-                        listPlayer_2[i].setImageResource(ListOfCarte[randomi2])
+                        Picasso.with(this).load(ListOfCarte[randomi2]).into( listPlayer_2[i])
+                       // listPlayer_2[i].setImageResource(ListOfCarte[randomi2])
                         number2[i] = buNumberEvent(ListOfCarte[randomi2])
                         listPlayer_2_Image[i] = ListOfCarte[randomi2]
                         emptyPlaceFromTheListOfImage2[i] = 1
@@ -111,11 +115,15 @@ class MainActivity : AppCompatActivity() {
                     }
                     i++
                 }
-                listPlayer_1[25].setImageResource(ListOfCarte.last())
+
+//                listPlayer_1[25].setImageResource(ListOfCarte.last())
+                Picasso.with(this).load(ListOfCarte.last()).into( listPlayer_1[25])
                 listPlayer_1_Image[25] = ListOfCarte.last()
                 number1[25] = buNumberEvent(ListOfCarte.last())
                 emptyPlaceFromTheListOfImage1[25] = 1
-                listPlayer_2[25].setImageResource(ListOfCarte.first())
+
+//                listPlayer_2[25].setImageResource(ListOfCarte.first())
+                Picasso.with(this).load(ListOfCarte.first()).into( listPlayer_2[25])
                 listPlayer_2_Image[25] = ListOfCarte.first()
                 number2[25] = buNumberEvent(ListOfCarte.first())
                 emptyPlaceFromTheListOfImage2[25] = 1
@@ -157,7 +165,8 @@ class MainActivity : AppCompatActivity() {
 //                         listPlayer_1_OutPut[position].visibility = View.VISIBLE
 //                        println("listPlayer_1_Image[po] = ${listPlayer_1_Image[po]}")
 
-                        listPlayer_1_OutPut[position].setImageResource(listPlayer_1_Image[po])
+                        Picasso.with(this).load(listPlayer_1_Image[po]).into(listPlayer_1_OutPut[position])
+//                        listPlayer_1_OutPut[position].setImageResource(listPlayer_1_Image[po])
                         listPlayer_1[po].visibility = View.GONE
 
                         indice1[position] = po
@@ -209,7 +218,8 @@ class MainActivity : AppCompatActivity() {
                         counter2--
                         txt_Player2_Counter.text = "${counter2}"
 
-                        listPlayer_2_OutPut[position].setImageResource(listPlayer_2_Image[po])
+                        Picasso.with(this).load(listPlayer_2_Image[po]).into(listPlayer_2_OutPut[position])
+//                        listPlayer_2_OutPut[position].setImageResource(listPlayer_2_Image[po])
                         listPlayer_2[po].visibility = View.GONE
 
                         indice2[position] = po
@@ -259,6 +269,7 @@ class MainActivity : AppCompatActivity() {
         var listPlayer_2_OutPut = arrayListOf(iv1_Player2_OutPut, iv2_Player2_OutPut, iv3_Player2_OutPut, iv4_Player2_OutPut)
         var listPlayer_1_OutPut = arrayListOf(iv1_Player1_OutPut, iv2_Player1_OutPut, iv3_Player1_OutPut, iv4_Player1_OutPut)
 
+        var str :String?=null
 
         //turn to list of carte for player 1
         for (po in 0..3) {
@@ -276,7 +287,8 @@ class MainActivity : AppCompatActivity() {
 //                    printCheked(checked1)
                     // listPlayer_1_OutPut[po].visibility = View.GONE
                     listPlayer_1[indice1[po]].visibility = View.VISIBLE
-                    listPlayer_1[indice1[po]].setImageResource(listPlayer_1_Image[indice1[po]])
+                    Picasso.with(this).load(listPlayer_1_Image[indice1[po]]).into(listPlayer_1[indice1[po]])
+//                    listPlayer_1[indice1[po]].setImageResource(listPlayer_1_Image[indice1[po]])
                     listPlayer_1_OutPut[po].setImageResource(0)
                     /* if (isCompleted(checked1) && test) {
 
@@ -300,7 +312,8 @@ class MainActivity : AppCompatActivity() {
                     emptyPlaceFromTheListOfImage2[po] = 0
                     //printCheked(checked2)
                     listPlayer_2[indice2[po]].visibility = View.VISIBLE
-                    listPlayer_2[indice2[po]].setImageResource(listPlayer_2_Image[indice2[po]])
+                    Picasso.with(this).load(listPlayer_2_Image[indice2[po]]).into(listPlayer_2[indice2[po]])
+//                    listPlayer_2[indice2[po]].setImageResource(listPlayer_2_Image[indice2[po]])
                     listPlayer_2_OutPut[po].setImageResource(0)
                     if (isCompleted(checked2) && test) {
                         resetImageChosenByPlayer2()
@@ -313,17 +326,20 @@ class MainActivity : AppCompatActivity() {
     fun resetImageChosenByPlayer1() {
         var listPlayer_1_OutPut = arrayListOf(iv1_Player1_OutPut, iv2_Player1_OutPut, iv3_Player1_OutPut, iv4_Player1_OutPut)
         for (po in 0..3) {
-            listPlayer_1_OutPut[po].setImageResource(R.drawable.marque)
+            Picasso.with(this).load(R.drawable.marque).into(listPlayer_1_OutPut[po])
+//            listPlayer_1_OutPut[po].setImageResource(R.drawable.marque)
         }
     }
 
-    fun resetImageChosenByPlayer2() {
+    private fun resetImageChosenByPlayer2() {
         var listPlayer_2_OutPut = arrayListOf(iv1_Player2_OutPut, iv2_Player2_OutPut, iv3_Player2_OutPut, iv4_Player2_OutPut)
         for (po in 0..3) {
-            listPlayer_2_OutPut[po].setImageResource(R.drawable.marque)
+            Picasso.with(this).load(R.drawable.marque).into(listPlayer_2_OutPut[po])
+//            listPlayer_2_OutPut[po].setImageResource(R.drawable.marque)
         }
     }
 
+     /*
     fun resetListOfImage() {
         var listPlayer_1 = arrayListOf(iv1_Player1, iv2_Player1, iv3_Player1, iv4_Player1, iv5_Player1, iv6_Player1, iv7_Player1, iv8_Player1, iv9_Player1, iv10_Player1, iv11_Player1, iv12_Player1, iv13_Player1, iv14_Player1, iv15_Player1, iv16_Player1, iv17_Player1, iv18_Player1, iv19_Player1, iv20_Player1, iv21_Player1, iv22_Player1, iv23_Player1, iv24_Player1, iv25_Player1, iv26_Player1, iv27_Player1, iv28_Player1, iv29_Player1, iv30_Player1, iv31_Player1, iv32_Player1, iv33_Player1, iv34_Player1, iv35_Player1, iv36_Player1, iv37_Player1, iv38_Player1, iv39_Player1, iv40_Player1, iv41_Player1, iv42_Player1, iv43_Player1, iv44_Player1, iv45_Player1, iv46_Player1, iv47_Player1, iv48_Player1, iv49_Player1, iv50_Player1, iv51_Player1, iv52_Player1)
         var listPlayer_2 = arrayListOf(iv1_Player2, iv2_Player2, iv3_Player2, iv4_Player2, iv5_Player2, iv6_Player2, iv7_Player2, iv8_Player2, iv9_Player2, iv10_Player2, iv11_Player2, iv12_Player2, iv13_Player2, iv14_Player2, iv15_Player2, iv16_Player2, iv17_Player2, iv18_Player2, iv19_Player2, iv20_Player2, iv21_Player2, iv22_Player2, iv23_Player2, iv24_Player2, iv25_Player2, iv26_Player2, iv27_Player2, iv28_Player2, iv29_Player2, iv30_Player2, iv31_Player2, iv32_Player2, iv33_Player2, iv34_Player2, iv35_Player2, iv36_Player2, iv37_Player2, iv38_Player2, iv39_Player2, iv40_Player2, iv41_Player2, iv42_Player2, iv43_Player2, iv44_Player2, iv45_Player2, iv46_Player2, iv47_Player2, iv48_Player2, iv49_Player2, iv50_Player2, iv51_Player2, iv52_Player2)
@@ -333,116 +349,20 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun buNumberEvent(ivSelect: Int): Int {
-
-
-        var buClickValue: Int = 0
-        when (ivSelect) {
-            R.drawable.trefle_01, R.drawable.coeur_01, R.drawable.carreau_01, R.drawable.pick_01 -> {
-                buClickValue = 1
-            }
-            R.drawable.trefle_02, R.drawable.coeur_02, R.drawable.carreau_02, R.drawable.pique_02 -> {
-                buClickValue = 2
-            }
-            R.drawable.trefle__03, R.drawable.coeur_03, R.drawable.carreau_03, R.drawable.pique_03 -> {
-                buClickValue = 3
-            }
-            R.drawable.trefle_04, R.drawable.coeur_04, R.drawable.carreau_04, R.drawable.pique_04 -> {
-                buClickValue = 4
-            }
-            R.drawable.trefle_05, R.drawable.coeur_05, R.drawable.carreau_05, R.drawable.pique_05 -> {
-                buClickValue = 5
-            }
-            R.drawable.trefle_06, R.drawable.coeur_06, R.drawable.carreau_06, R.drawable.pique_06 -> {
-                buClickValue = 6
-            }
-            R.drawable.trefle_07, R.drawable.coeur_07, R.drawable.carreau_07, R.drawable.pique_07 -> {
-                buClickValue = 7
-            }
-            R.drawable.trefle_08, R.drawable.coeur_08, R.drawable.carreau_08, R.drawable.pique_08 -> {
-                buClickValue = 8
-            }
-            R.drawable.trefle_09, R.drawable.coeur_09, R.drawable.carreau_09, R.drawable.pique_09 -> {
-                buClickValue = 9
-            }
-            R.drawable.trefle_10, R.drawable.coeur_10, R.drawable.carreau_10, R.drawable.pique_10 -> {
-                buClickValue = 10
-            }
-            R.drawable.trefle_11, R.drawable.coeur_11, R.drawable.carreau_11, R.drawable.pique_11 -> {
-                buClickValue = 11
-            }
-            R.drawable.trefle_12, R.drawable.coeur_12, R.drawable.carreau_12, R.drawable.pique_12 -> {
-                buClickValue = 12
-            }
-            R.drawable.trefle_13, R.drawable.coeur_13, R.drawable.carreau_13, R.drawable.pique_13 -> {
-                buClickValue = 13
-            }
-        }
-        return buClickValue
-    }
-
-    //Quatre cartes identiques
-    fun verifyQuads(number1: IntArray, indice1: IntArray): Boolean {
-        var test = false
-        if (number1[indice1[0]] == number1[indice1[1]] && number1[indice1[1]] == number1[indice1[2]] && number1[indice1[2]] == number1[indice1[3]]) {
-            test = true
-        }
-        return test
-    }
-
-    fun emptyImageFromListCheked(checked: IntArray): Int {
-        var output = -1
-        for (i in 0..checked.size - 1) {
-            if (checked[i] == 0) {
-                output = i
-                break
-            }
-        }
-        return output
-    }
-
-
-    fun isAnyEmptyImage(checked1: IntArray): Boolean {
-        var output = false
-        for (i in 0..checked1.size - 1) {
-            if (checked1[i] == 0) {
-                output = true
-                break
-            }
-        }
-        return output
-    }
 
     fun printCheked(checked1: IntArray) {
         for (i in 0..4) {
             println("cheked[$i] = ${checked1[i]}")
         }
-    }
-
-    //add the number of cheked carte turn all my code fail hhhhhhhhh
-    fun isCompleted(checked1: IntArray): Boolean {
-        var test = true
-        for (i in 0..checked1.size - 2) {
-            if (checked1[i] != 1) {
-                test = false
-                break
-            }
-        }
-        return test
-    }
-
-    fun resetArrayOfInt(checked1: IntArray) {
-        for (i in 0..checked1.size - 1) {
-            checked1[i] = 0
-        }
-    }
+    }*/
 
     fun setCarteSelectionOfGame() {
         val listSelection = arrayListOf(iv1_Selection, iv2_Selection, iv3_Selection, iv4_Selection, iv5_Selection, iv6_Selection, iv7_Selection, iv8_Selection, iv9_Selection, iv10_Selection, iv11_Selection, iv12_Selection, iv13_Selection)
         for (i in 0..12) {
             listSelection[i].setOnClickListener {
                 if (testDestribute) {
-                    iv_Joker.setImageResource(ListOfCarteSelected[i])
+                    Picasso.with(this).load(ListOfCarteSelected[i]).into( iv_Joker)
+//                    iv_Joker.setImageResource(ListOfCarteSelected[i])
                     numberOfSelectedCarte = buNumberEvent(ListOfCarteSelected[i])
 
                 }
@@ -470,7 +390,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 resetImageChosenByPlayer1()
                 resetArrayOfInt(checked1)
-                printSetCarteIntoGame()
+                printArrayListWithMsg(listOfCarteInGame,"listOfCarteInGame")
                 println("counterLastSetCarte = $counterLastSetCarte)")
             }
 
@@ -492,23 +412,26 @@ class MainActivity : AppCompatActivity() {
                 }
                 resetImageChosenByPlayer2()
                 resetArrayOfInt(checked2)
-                printSetCarteIntoGame()
+                printArrayListWithMsg(listOfCarteInGame,"listOfCarteInGame")
+
+                Press_Player1.alpha= 0.3F
                 println("counterLastSetCarte = $counterLastSetCarte)")
             }
 
         }
     }
 
-    fun printSetCarteIntoGame() {
+ /*   fun printSetCarteIntoGame() {
         for (i in 0..listOfCarteInGame.size - 1) {
             println(" listOfCarteInGame[$i] = ${listOfCarteInGame[i]}")
         }
-    }
+    }*/
 
 
     //TODO : Force one Click
 
     fun addCarteToLoser() {
+
         var length = listOfCarteInGame.size - 1
         //listPlayer_1_Image[41] = listOfCarteInGame[length]
         var listPlayer_1 = arrayListOf(iv1_Player1, iv2_Player1, iv3_Player1, iv4_Player1, iv5_Player1, iv6_Player1, iv7_Player1, iv8_Player1, iv9_Player1, iv10_Player1, iv11_Player1, iv12_Player1, iv13_Player1, iv14_Player1, iv15_Player1, iv16_Player1, iv17_Player1, iv18_Player1, iv19_Player1, iv20_Player1, iv21_Player1, iv22_Player1, iv23_Player1, iv24_Player1, iv25_Player1, iv26_Player1, iv27_Player1, iv28_Player1, iv29_Player1, iv30_Player1, iv31_Player1, iv32_Player1, iv33_Player1, iv34_Player1, iv35_Player1, iv36_Player1, iv37_Player1, iv38_Player1, iv39_Player1, iv40_Player1, iv41_Player1, iv42_Player1, iv43_Player1, iv44_Player1, iv45_Player1, iv46_Player1, iv47_Player1, iv48_Player1, iv49_Player1, iv50_Player1, iv51_Player1, iv52_Player1)
@@ -518,6 +441,7 @@ class MainActivity : AppCompatActivity() {
         var position: Int
         println("lognuer = $length")
         while (length >= 0) {
+
             //player 1 play and lie or player 1 have a wrong prediction ==> return to all card to his own list hhhhh
             if ((!set1 && !istrueListOfCarte) || (set1 && istrueListOfCarte)) {
                 println("#######################     Player 1   #######################")
@@ -525,8 +449,13 @@ class MainActivity : AppCompatActivity() {
                 counter++
                 position = emptyImageFromListCheked(emptyPlaceFromTheListOfImage1)
                 println("position emptyPlaceFromTheListOfImage1  = $position")
+
                 listPlayer_1[position].visibility = View.VISIBLE
-                listPlayer_1[position].setImageResource(listOfCarteInGame[length])
+
+
+                Picasso.with(this).load(listOfCarteInGame[length]).into( listPlayer_1[position])
+//                listPlayer_1[position].setImageResource(listOfCarteInGame[length])
+
                 println("listOfCarteInGame[length] = ${listOfCarteInGame[length]}")
                 listPlayer_1_Image[position] = listOfCarteInGame[length]
                 println(" listPlayer_1_Image[length] = listOfCarteInGame[length] = ${listPlayer_1_Image[position]}")
@@ -541,6 +470,7 @@ class MainActivity : AppCompatActivity() {
                 //player 2 play and lie or player 2 have a wrong prediction
 
             } else if ((!set2 && !istrueListOfCarte) || (set2 && istrueListOfCarte)) {
+
                 println("#######################     Player 2   #######################")
                 printArrayWithMsg(listPlayer_2_Image, "listPlayer_2_Image")
                 counter2++
@@ -555,6 +485,7 @@ class MainActivity : AppCompatActivity() {
                 println("\n")
                 printArrayWithMsg(emptyPlaceFromTheListOfImage2, "emptyPlaceFromTheListOfImage2")
                 setted2[position] = 0
+
             }
             println("-----------------------------\n ------------------------lognuer = ------------- $length")
             length--
@@ -672,11 +603,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun printArrayWithMsg(listPlayer_1_Image: IntArray, arrayName: String) {
-        for (i in 0..listPlayer_1_Image.size - 1) {
-            println("$arrayName[$i] = ${listPlayer_1_Image[i]}")
-        }
-    }
+
 
     fun resetGame() {
 //        ListOfCarte = arrayListOf(R.drawable.carreau_01, R.drawable.carreau_02, R.drawable.carreau_03, R.drawable.carreau_04, R.drawable.carreau_05, R.drawable.carreau_06, R.drawable.carreau_07, R.drawable.carreau_08, R.drawable.carreau_09, R.drawable.carreau_10, R.drawable.carreau_11, R.drawable.carreau_12, R.drawable.carreau_13, R.drawable.trefle_01, R.drawable.trefle_02, R.drawable.trefle__03, R.drawable.trefle_04, R.drawable.trefle_05, R.drawable.trefle_06, R.drawable.trefle_07, R.drawable.trefle_08, R.drawable.trefle_09, R.drawable.trefle_10, R.drawable.trefle_11, R.drawable.trefle_12, R.drawable.trefle_13, R.drawable.coeur_01, R.drawable.coeur_02, R.drawable.coeur_03, R.drawable.coeur_04, R.drawable.coeur_05, R.drawable.coeur_06, R.drawable.coeur_07, R.drawable.coeur_08, R.drawable.coeur_09, R.drawable.coeur_10, R.drawable.coeur_11, R.drawable.coeur_12, R.drawable.coeur_13, R.drawable.pick_01, R.drawable.pique_02, R.drawable.pique_03, R.drawable.pique_04, R.drawable.pique_05, R.drawable.pique_06, R.drawable.pique_07, R.drawable.pique_08, R.drawable.pique_09, R.drawable.pique_10, R.drawable.pique_11, R.drawable.pique_12, R.drawable.pique_13)

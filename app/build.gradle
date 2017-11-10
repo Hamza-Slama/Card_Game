@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "all.stage.myapplication"
         minSdkVersion 15
@@ -33,5 +33,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.0'
     compile 'com.android.support:percent:26.0.1'
     compile 'org.jetbrains.anko:anko-common:0.9.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
 }

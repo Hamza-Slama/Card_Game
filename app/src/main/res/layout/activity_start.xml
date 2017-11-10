@@ -45,17 +45,18 @@
                 android:layout_height="90dp"
                 android:background="@drawable/background_table"
                 android:padding="12dp"
-                android:text="play"
+                android:text="2 player"
                 android:textColor="#FFF"
                 android:textSize="20dp"
                 android:textStyle="italic" />
 
             <Button
+                android:id="@+id/btnTestOnePlayer"
                 android:layout_width="wrap_content"
                 android:layout_height="90dp"
                 android:background="@drawable/background_table"
                 android:padding="12dp"
-                android:text="Score"
+                android:text="One player"
                 android:textColor="#FFF"
                 android:textSize="20dp"
                 android:textStyle="italic" />
@@ -73,10 +74,11 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="190dp"
                 android:layout_below="@+id/TVacueil"
                 android:padding="5dp"
-                android:src="@drawable/aceuil" />
+
+                android:src="@drawable/cards_icon" />
         </LinearLayout>
     </ScrollView>
 </android.support.percent.PercentRelativeLayout>
